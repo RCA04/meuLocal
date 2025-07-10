@@ -3,6 +3,8 @@ import axios from "axios";
 
 function App() {
   
+  const api = process.env.REACT_APP_API_URL;
+
   const [cep, setCep] = useState("");
   const [endereco, setEndereco] = useState(null);
 
@@ -16,7 +18,7 @@ function App() {
 
     const buscar = async (cepLimpo) => {
     try {
-      const response = await axios.get(`https://viacep.com.br/ws/${cepLimpo}/json/`);
+      const response = await axios.get(`${api}/${cepLimpo}/json/`);
       setEndereco(response.data);
 
       if(response.data.erro){
