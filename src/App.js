@@ -83,22 +83,21 @@ function App() {
 
      
 {endereco &&(   
-  console.log(endereco)
-  // <div>
-  //   <div className="Card">
-  //     <div className="Title">MeuLocal-ViaCep</div> 
-  //     <div className="Title2">Você está em:</div>
-  //     <ul className="Items">
-  //     <li><strong>Cidade:</strong> {endereco.localidade}</li>
-  //     <li><strong>UF:</strong> {endereco.uf}</li>
-  //     <li><strong>Estado:</strong> {endereco.estado}</li>
-  //     <li><strong>Bairro:</strong> {endereco.bairro}</li>
-  //     <li><strong>Ruas:</strong> {endereco.logradouro}</li>
-  //     <li><strong>Quadras:</strong> {endereco.complemento}</li>
-  //     </ul>
-  //     <button onClick={resetar} className="Botao">Realizar outra pesquisa</button>
-  //   </div>
-  // </div>        
+   <div>
+     <div className="Card">
+       <div className="Title">MeuLocal-ViaCep</div> 
+       <div className="Title2">Você está em:</div>
+       <ul className="Items">
+       <li><strong>Cidade:</strong> {endereco.localidade}</li>
+       <li><strong>UF:</strong> {endereco.uf}</li>
+       <li><strong>Estado:</strong> {endereco.estado}</li>
+       <li><strong>Bairro:</strong> {endereco.bairro}</li>
+       <li><strong>Ruas:</strong> {endereco.logradouro}</li>
+       <li><strong>Quadras:</strong> {endereco.complemento}</li>
+       </ul>
+       <button onClick={resetar} className="Botao">Realizar outra pesquisa</button>
+     </div>
+   </div>        
 )}
 
 </>
